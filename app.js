@@ -8,9 +8,7 @@ function agregarAmigo() {
         return;
     }
     amigos.push(name);
-    document.getElementById('amigo').value = "";
-    document.getElementById('amigo').focus();
-    //console.log(amigos);
+    document.getElementById('amigo').value = ""; document.getElementById('amigo').focus();
     listaAmigos();
 }
 
