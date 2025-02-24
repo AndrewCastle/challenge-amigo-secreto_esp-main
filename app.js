@@ -13,3 +13,11 @@ function agregarAmigo() {
     console.log(amigos);
     listaAmigos();
 }
+
+function listaAmigos() {
+    let lista = document.querySelector('#listaAmigos');
+    lista.innerHTML = "";
+    for (let index = 0; index < amigos.length; index++) {
+        lista.append(amigos[index], document.createElement('li'));
+    }
+}
